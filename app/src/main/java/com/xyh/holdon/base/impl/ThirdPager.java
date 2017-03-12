@@ -13,6 +13,7 @@ import com.xyh.holdon.base.BasePager;
 
 public class ThirdPager extends BasePager {
 
+
     public ThirdPager(Activity activity) {
         super(activity);
     }
@@ -25,7 +26,6 @@ public class ThirdPager extends BasePager {
         textView.setTextColor(Color.RED);
         textView.setGravity(Gravity.CENTER);
         mFlPagerContent.addView(textView);
-
 
         mTvTitle.setText("title 3");
     }
