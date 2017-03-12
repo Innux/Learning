@@ -18,6 +18,7 @@ public class TypeBean {
         public int id;
         public int seq;
 
+
         @Override
         public String toString() {
             return "hotWords{" +
