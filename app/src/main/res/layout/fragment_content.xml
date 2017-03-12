@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/toolbar_title"/>-->
+
+    <com.xyh.holdon.view.NoScrollViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </com.xyh.holdon.view.NoScrollViewPager>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bd2b2929"/>
+
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7f000000"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/rbtn_home"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/tab_pet_selector"
+            android:text="第一页"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_news"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/tab_school_selector"
+            android:text="第二页"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_scocial"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/tab_social_selector"
+            android:text="第三页"/>
+
+    </RadioGroup>
+
+</LinearLayout>
