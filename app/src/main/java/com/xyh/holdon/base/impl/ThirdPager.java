@@ -26,6 +26,7 @@ public class ThirdPager extends BasePager {
         textView.setGravity(Gravity.CENTER);
         mFlPagerContent.addView(textView);
 
+
         mTvTitle.setText("title 3");
     }
 }
